@@ -1,0 +1,17 @@
+[Unit]
+Description=Network Monitor Service
+After=network.target
+
+[Service]
+Type=simple
+User=naveenbose
+WorkingDirectory=/path/of/script
+ExecStart=/usr/bin/python3 /path/of/the/file/scripts/network_monitor.py
+Restart=on-failure
+RestartSec=30
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=network_monitor
+
+[Install]
+WantedBy=multi-user.target
