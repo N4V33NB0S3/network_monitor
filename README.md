@@ -1,4 +1,4 @@
-# 🌐 Network Status Monitor Bot  
+# 🌐 Network Monitor Bot  
 *Get Telegram alerts when your internet connection drops or recovers!*
 
 <p align="center">
