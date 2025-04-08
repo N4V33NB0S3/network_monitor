@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
-User=naveenbose
+User=username
 WorkingDirectory=/path/of/script
 ExecStart=/usr/bin/python3 /path/of/the/file/scripts/network_monitor.py
 Restart=on-failure
