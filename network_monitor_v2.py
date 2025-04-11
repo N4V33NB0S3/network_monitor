@@ -4,12 +4,12 @@ import time
 import sys
 
 # Telegram Bot credentials
-BOT_TOKEN = "7614997027:AAGou_eIZjRYd-hyhyQHdMARWqaDG4uuJIo"
-CHAT_ID = "430327512"
+BOT_TOKEN = "redacted"
+CHAT_ID = "redacted"
 TELEGRAM_URL = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
 
 # File to store downtime timestamp
-DOWNTIME_LOG = "/home/naveenbose/Network_logs/network_downtime.log"
+DOWNTIME_LOG = "/tmp/network_downtime.log"
 
 # Number of failed checks before confirming downtime
 CHECK_COUNT = 3
