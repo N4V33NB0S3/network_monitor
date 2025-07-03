@@ -1,17 +1,18 @@
+# /etc/systemd/system/network_monitor.service
 [Unit]
-Description=Network Monitor Service
+Description=Network Monitor
 After=network.target
 
 [Service]
 Type=simple
-User=username
-WorkingDirectory=/path/of/script
-ExecStart=/usr/bin/python3 /path/of/the/file/scripts/network_monitor.py
+User=root
+ExecStart=/usr/bin/python3 /usr/local/bin/network_monitor.py
 Restart=on-failure
-RestartSec=30
+RestartSec=60
+StartLimitInterval=300
+StartLimitBurst=5
 StandardOutput=journal
 StandardError=journal
-SyslogIdentifier=network_monitor
 
 [Install]
 WantedBy=multi-user.target
